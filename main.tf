@@ -16,6 +16,6 @@ resource "aws_s3_bucket" "exmys3" {
 
   tags = {
     Name        = "My Bucket - exmys3"
-    Environment = "Dev"
+    Environment = "Dev-UpdateTags"
   }
 }
