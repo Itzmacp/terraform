@@ -205,3 +205,6 @@ terraform state file data file name terraform.tfstate
   ],
   "check_results": null
 }
+-----------------
+Variables 
+#init, list, map, bool, string 
