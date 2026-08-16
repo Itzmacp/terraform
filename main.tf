@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "exmys3" {
-  bucket = "my-tf-test-bucketmaccloudtf001xxxx"
+  bucket = "my-tf-test-bucketmaccloudtf001xxxx00"
 
   tags = {
     Name        = "My Bucket - exmys3"
