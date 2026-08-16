@@ -3,7 +3,7 @@ variable "x" {
 }
 
 variable "y_list" {
-    default = [1,2,3]
+    default = [1,"Blue",3]
 
 }
 
