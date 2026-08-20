@@ -14,6 +14,9 @@ variable "z_map" {
     }
 }
 
+variable "env" {}
+variable "tag" {}
+
 output "x" {
     value = var.x
 }
@@ -29,3 +32,18 @@ output "y_1" {
 output "z_x" {
     value = var.z_map["x"]
 }
+
+output "env-name" {
+    value = "Environment Name - ${var.env}"
+}
+
+output "tag" {
+    value = var.tag
+}
+
+#int, list, map, bool, string
+
+#var.variablename - refering a variable
+# 1. var.tf
+# 2. *.tfvars
+# 3. *.auto.tfvars 
