@@ -1,2 +1,18 @@
-tfplan
+# Terraform local state and backups
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Terraform lock and cache files
 .terraform/
+.terraform.lock.hcl
+
+# Local variable overrides
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
