@@ -331,3 +331,11 @@ resource "aws_security_group" "sg" {
     }
   }
 }
+
+To securely manage shared infrastructure, 
+Terraform uses an S3 remote backend to store state files centrally,
+ alongside a DynamoDB table for state locking to prevent concurrent writes.
+  A Terraform data block (terraform_remote_state) then allows separate configurations 
+  to read this shared state without modifying
+
+  Used for concurrent users working on the same project
