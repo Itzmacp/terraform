@@ -8,7 +8,7 @@ terraform {
   backend "s3" {
     bucket = "my-tf-test-bucketxxxaxaxaxaxmacmacmac"
     key    = "mac/mytffiles/terraform.tfstate"
-    region = "us-east-1" 
+    region = "ap-south-1" 
 
        
     # For State Locking
@@ -20,7 +20,7 @@ terraform {
 
 # Provider Block
 provider "aws" {
-  region  = "us-east-1"
+  region  = "ap-south-1"
 }
 
 
