@@ -12,7 +12,8 @@ terraform {
 
        
     # For State Locking
-    dynamodb_table = "project-tf"    
+    use_lockfile = true # Replaces deprecated dynamodb_table attribute
+    
   } 
 }
 
